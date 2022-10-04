@@ -1,0 +1,108 @@
+<?php header("Content-type: text/html; charset=utf-8"); ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="theme_page" name="theme-color" content="#fff">
+    <link id="favicon" rel="shortcut icon" type="image/base64" href="" />
+    <meta name="description" content="Página de contatos da empresa Entre Fios STM">
+    <meta name="keywords" content="">
+    <meta name="author" content="Saulo Costa">
+    <title>Entre Fios - STM</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div id="ambient">
+        <!-- particulas -->
+    </div>
+
+    <!-- modal -->
+    <div id="modal">
+        <div id="modal_wrap">
+
+            <button onclick="closeGallery()" id="btn_close">
+                <img src="./icons/close-svgrepo-com.svg" alt="">
+            </button>
+
+            <div id="img_product">
+                <!--  -->
+            </div>
+
+            <div id="controlls">
+                <button onclick="antImg()" class="controlls_btn" id="ant">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" id="_24x24_On_Light_Arrow-Left"
+                        data-name="24x24/On Light/Arrow-Left" xmlns="http://www.w3.org/2000/svg">
+                        <rect id="view-box" width="24" height="24" fill="none" />
+                        <path id="Shape"
+                            d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                            transform="translate(14.75 17.75) rotate(180)" fill="#8574a3" />
+                    </svg>
+                </button>
+
+                <button onclick="nxtImg()" class="controlls_btn" id="nxt">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" id="_24x24_On_Light_Arrow-Right"
+                        data-name="24x24/On Light/Arrow-Right" xmlns="http://www.w3.org/2000/svg">
+                        <rect id="view-box" width="24" height="24" fill="none" />
+                        <path id="Shape"
+                            d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                            transform="translate(9.25 6.25)" fill="#8574a3" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+        <main>
+            <div id="card">
+
+                <img id="avatar" src="./img/avatar.png">
+
+                <div id="title">
+                    <!-- titulo aqui! -->
+                </div>
+
+                <div id="links">
+
+                    <ul id="link_list">
+                        <!-- <a href="https://wa.me/5593991716663" target="_blank" rel="">
+                            <li class="link">
+                                <img class="icon" src="" alt="">
+                                <span class="link_title">
+                                    INTERNET EM SANTARÉM
+                                </span>
+                            </li>
+                        </a>
+
+                        <a href="https://wa.me/5591989952373" target="_blank" rel="">
+                            <li class="link">
+                                <img class="icon" src="" alt="">
+                                <span class="link_title">
+                                    INTERNET EM ICOARACI - BELÉM
+                                </span>
+                            </li>
+                        </a> -->
+                    </ul>
+
+                </div>
+
+                <button onclick="openGallery()" id="galery_btn">Galeria</button>
+
+            </div>
+
+        </main>
+    </section>
+
+    <script src="./js/bvambient.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
+
+</body>
+
+</html>
