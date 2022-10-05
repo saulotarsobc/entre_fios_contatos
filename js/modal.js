@@ -15,7 +15,7 @@ let imgs
     img_product.src = imgs[target].src;
     img_product.alt = imgs[target].alt;
 
-    openGallery();
+    // openGallery();
 
 })();
 
