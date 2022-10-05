@@ -1,22 +1,14 @@
 const img_product = document.querySelector('#img_product');
 
 let target = 0;
-let max
-let imgs
+let max;
+let imgs;
 
 (async () => {
-    imgs = await fetch('../img/products/imgs.json')
-        .then((result) => {
-            return result.json();
-        });
-
+    imgs = await fetch('../img/products/imgs.json').then((result) => { return result.json(); });
     max = imgs.length;
-
     img_product.src = imgs[target].src;
     img_product.alt = imgs[target].alt;
-
-    // openGallery();
-
 })();
 
 
@@ -36,7 +28,6 @@ function nxtImg() {
     if (target == max) {
         target = 0;
     }
-    // console.log(imgs[target]);
     img_product.src = imgs[target].src;
     img_product.alt = imgs[target].alt;
 };
@@ -46,8 +37,6 @@ function antImg() {
     if (target < 0) {
         target = max - 1;
     }
-    // console.log(imgs[target]);
     img_product.src = imgs[target].src;
     img_product.alt = imgs[target].alt;
 };
-
